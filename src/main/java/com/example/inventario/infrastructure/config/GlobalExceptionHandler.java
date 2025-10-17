@@ -1,10 +1,10 @@
-package com.example.miProyecto.infrestructure.config;
+package com.example.inventario.infrastructure.config;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-public class ExceptionHandler {
+public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public String exceptionHandler(Exception e){

@@ -1,19 +1,18 @@
 package com.example.inventario.application.dto;
 
-public class ProductDto {
-    public Long id;
+public class ProductRequestDto {
     public String name;
     public String brand;
     public String description;
     public double price;
-    public boolean active;
 
-    public ProductDto(Long id, String name, String brand, String description, double price, boolean active) {
-        this.id = id;
+    public ProductRequestDto() {
+    }
+
+    public ProductRequestDto(String name, String brand, String description, double price) {
         this.name = name;
         this.brand = brand;
         this.description = description;
         this.price = price;
-        this.active = active;
     }
 }

@@ -1,6 +1,7 @@
 package com.example.inventario.infrastructure.adapters.jpa;
 
-public interface ProductJpaRepository extends
-JpaRepository<ProductEntity, Long> {
-	
+import com.example.inventario.infrastructure.adapters.entity.ProductEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductJpaRepository extends JpaRepository<ProductEntity, Long> {
 }
