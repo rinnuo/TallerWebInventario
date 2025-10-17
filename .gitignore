@@ -35,4 +35,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Application Properties (ignorar cambios locales)
 src/main/resources/application.properties
+
+# Opcional: si quieres mantener un template pero ignorar el real
+#src/main/resources/application-local.properties
