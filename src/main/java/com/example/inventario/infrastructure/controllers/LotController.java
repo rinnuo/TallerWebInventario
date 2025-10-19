@@ -9,6 +9,7 @@ import java.util.List;
 import com.example.inventario.application.dto.MoveRequest;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("api/lot")
 @RequiredArgsConstructor
 public class LotController {
