@@ -45,7 +45,6 @@ public class LotServices {
             throw new IllegalArgumentException("fromStoreId and toStoreId must be different");
         }
 
-        // validate stores exist in the file-backed list
         Optional<StoreDto> fromStore = storeProvider.findById(fromStoreId);
         Optional<StoreDto> toStore = storeProvider.findById(toStoreId);
         if (fromStore.isEmpty()) throw new IllegalArgumentException("Source store not found: " + fromStoreId);
